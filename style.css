@@ -1,0 +1,52 @@
+@media (min-width: 861px) {
+  #links {
+    background-color: #e9e9e9;
+  }
+
+  #page {
+    display: grid;
+    width: 100%;
+    max-width: 1110px;
+    grid-gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "Planejamento Programação Ajuda"
+      "Planejamento Programação Ajuda"
+      "Planejamento Programação Ajuda";
+  }
+
+  #page>#Planejamento {
+    padding: 16px;
+    grid-area: Planejamento;
+    height: 100%;
+  }
+
+  #page>#Programação {
+    border-radius: 8px;
+    grid-area: Programação;
+  }
+
+  #page>#Ajuda {
+    border-radius: 8px;
+    grid-area: Ajuda;
+  }
+
+  #links a {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.1rem;
+    font-weight: bolder;
+  }
+
+  #links img {
+    margin: 1rem;
+    max-width: 2.7rem;
+  }
+
+}
