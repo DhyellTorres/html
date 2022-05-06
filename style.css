@@ -1,3 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#destaque {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: url(/img/p1.jpg);
+  background-size: cover;
+}
+
+.vermelho {
+  color: #ff0000;
+  background: none;
+}
+
+.azul {
+  color: #0066ff;
+  background: none;
+}
+
+.laranja {
+  color: #ffa600;
+  background: none;
+}
+
+#destaque h1 {
+  padding: 0.1rem;
+  font-size: 2rem;
+}
+
+#destaque h2 {
+  padding: 0.1rem;
+  font-size: 1.6rem;
+}
+
+#html {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #F16529;
+}
+
+#js {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #F1BF26;
+}
+
+#css {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #2965F1;
+}
+
 @media (min-width: 861px) {
   #links {
     background-color: #e9e9e9;
@@ -18,35 +75,132 @@
       "Planejamento Programação Ajuda";
   }
 
-  #page>#Planejamento {
-    padding: 16px;
-    grid-area: Planejamento;
-    height: 100%;
+  header {
+    background-color: #000000;
+    text-align: right;
   }
 
-  #page>#Programação {
-    border-radius: 8px;
-    grid-area: Programação;
+  header img {
+    float: left;
+    margin: 0.2rem;
+    max-height: 9rem;
   }
 
-  #page>#Ajuda {
-    border-radius: 8px;
-    grid-area: Ajuda;
-  }
-
-  #links a {
-    display: flex;
-    align-items: center;
-    align-self: center;
-    text-decoration: none;
-    color: #000000;
-    font-size: 1.1rem;
+  header a {
     font-weight: bolder;
+    text-decoration: none;
+    color: #ffffff;
+    padding-right: 1rem;
   }
 
-  #links img {
-    margin: 1rem;
-    max-width: 2.7rem;
+  header li {
+    display: inline-block;
+    align-items: baseline;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
+  footer {
+    background-color: #000000;
+    color: #e9e9e9;
+  }
+}
+
+@media (max-width: 860px) {
+  #links {
+    background-color: #e9e9e9;
+  }
+
+  #page {
+    display: grid;
+    width: 100%;
+    max-width: 1110px;
+    grid-gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "Planejamento Planejamento"
+      "Programação Programação"
+      "Ajuda Ajuda";
+  }
+
+  header {
+    background-color: #000000;
+    text-align: right;
+  }
+
+  header img {
+    float: left;
+    margin: 0.2rem;
+    max-height: 9rem;
+  }
+
+  header a {
+    font-weight: none;
+    text-decoration: none;
+    color: #ffffff;
+    padding-right: 1rem;
+  }
+
+  header li {
+    display: inline-block;
+    align-items: baseline;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  footer {
+    background-color: #000000;
+    color: #e9e9e9;
+  }
+}
+
+#page>#Planejamento {
+  display: grid;
+  padding: 16px;
+  grid-area: Planejamento;
+  height: 100%;
+}
+
+#page>#Programação {
+  display: grid;
+  padding: 16px;
+  grid-area: Programação;
+  height: 100%;
+}
+
+#page>#Ajuda {
+  display: grid;
+  padding: 16px;
+  grid-area: Ajuda;
+  height: 100%;
+}
+
+#links a {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+#links img {
+  margin: 1rem;
+  max-width: 2.7rem;
+}
+
+#links h2 {
+  padding: 1rem;
+  text-align: center;
+  font-size: 2.5rem;
 }
