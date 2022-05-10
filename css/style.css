@@ -1,0 +1,302 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#destaque {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: url(/img/p1.jpg);
+  background-size: cover;
+}
+
+.vermelho {
+  color: #E44D26;
+  background: none;
+}
+
+.azul {
+  color: #264DE4;
+  background: none;
+}
+
+.laranja {
+  color: #E5A228;
+  background: none;
+}
+
+h1 {
+  margin: 1rem;
+  padding: 0.1rem;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 1rem;
+  padding: 0.1rem;
+  font-size: 1.6rem;
+}
+
+h3 {
+  margin: 1rem;
+  padding: 0.1rem;
+  font-size: 1.3rem;
+}
+
+.saibaMais {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  width: 200px;
+  font-weight: 900;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#html {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #F16529;
+}
+
+#js {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #F1BF26;
+}
+
+#css {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #2965F1;
+}
+
+@media (min-width: 861px) {
+  #links {
+    background-color: #FFFFFF;
+  }
+  .tag {
+    display: absolute;
+    float: left;
+    max-height: 15rem;
+  }
+  .tag2 {
+    display: absolute;
+    float: right;
+    max-height: 15rem;
+  }
+  #page {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    max-width: 1110px;
+    grid-gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "Planejamento Programação Ajuda" "Planejamento Programação Ajuda" "Planejamento Programação Ajuda";
+  }
+  header {
+    background-color: #000000;
+    text-align: right;
+  }
+  header img {
+    float: left;
+    margin: 0.2rem;
+    max-height: 9rem;
+  }
+  header a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding-right: 1rem;
+  }
+  header li {
+    display: inline-block;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  footer {
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+  #gridFooter {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    max-width: 1110px;
+    grid-gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "textoFooter logoFooter";
+  }
+  #gridFooter #textoFooter {
+    float: left;
+  }
+  #gridFooter #logoFooter {
+    float: right;
+  }
+}
+
+@media (max-width: 860px) {
+  #links {
+    background-color: #FFFFFF;
+  }
+  .tag {
+    max-height: 15rem;
+  }
+  .tag2 {
+    max-height: 15rem;
+  }
+  #page {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    max-width: 1110px;
+    grid-gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "Planejamento" "Programação" "Ajuda";
+  }
+  header {
+    background-color: #000000;
+    text-align: right;
+  }
+  header img {
+    float: left;
+    margin: 0.2rem;
+    max-height: 9rem;
+  }
+  header a {
+    font-weight: none;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding-right: 1rem;
+  }
+  header li {
+    display: inline-block;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  footer {
+    display: -ms-grid;
+    display: grid;
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+  #gridFooter {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    max-width: 1110px;
+    grid-gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "logoFooter" "textoFooter";
+  }
+}
+
+#page #Planejamento {
+  display: -ms-grid;
+  display: grid;
+  padding: 16px;
+  grid-area: Planejamento;
+  height: 100%;
+}
+
+#page #Programação {
+  display: -ms-grid;
+  display: grid;
+  padding: 16px;
+  grid-area: Programação;
+  height: 100%;
+}
+
+#page #Ajuda {
+  display: -ms-grid;
+  display: grid;
+  padding: 16px;
+  grid-area: Ajuda;
+  height: 100%;
+}
+
+#links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+#links img {
+  margin: 1rem;
+  max-width: 2.7rem;
+}
+
+#links h2 {
+  padding: 1rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+/*# sourceMappingURL=style.css.map */
