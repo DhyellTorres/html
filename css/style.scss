@@ -41,7 +41,7 @@ $colorsLikert: (1: #9E2731,
   text-align: center;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background: url(/img/p1.jpg);
+  background: url(/img/Destaque_o100.png);
   background-size: cover;
 }
 
@@ -199,6 +199,10 @@ h3 {
 }
 
 @media (max-width: 860px) {
+  #aberto {
+    display: none;
+  }
+
   #menu {
     display: none;
   }
