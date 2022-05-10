@@ -118,6 +118,10 @@ h3 {
 }
 
 @media (min-width: 861px) {
+  #butMenu {
+    display: none;
+  }
+
   #links {
     background-color: $backgroundDefaultColor;
   }
@@ -152,26 +156,20 @@ h3 {
   header {
     background-color: $backgroundSecondaryColor;
     text-align: right;
-  }
 
-  header {
     img {
       float: left;
       margin: 0.2rem;
       max-height: 9rem;
     }
-  }
 
-  header {
     a {
       font-weight: bolder;
       text-decoration: none;
       color: $fontSecondaryColor;
       padding-right: 1rem;
     }
-  }
 
-  header {
     li {
       display: inline-block;
       align-items: baseline;
@@ -201,6 +199,10 @@ h3 {
 }
 
 @media (max-width: 860px) {
+  #menu {
+    display: none;
+  }
+
   #links {
     background-color: $backgroundDefaultColor;
   }
@@ -231,26 +233,20 @@ h3 {
   header {
     background-color: $backgroundSecondaryColor;
     text-align: right;
-  }
 
-  header {
     img {
       float: left;
       margin: 0.2rem;
       max-height: 9rem;
     }
-  }
 
-  header {
     a {
       font-weight: none;
       text-decoration: none;
       color: $fontSecondaryColor;
       padding-right: 1rem;
     }
-  }
 
-  header {
     li {
       display: inline-block;
       align-items: baseline;
@@ -279,18 +275,14 @@ h3 {
     grid-area: Planejamento;
     height: 100%;
   }
-}
 
-#page {
   #Programação {
     display: grid;
     padding: 16px;
     grid-area: Programação;
     height: 100%;
   }
-}
 
-#page {
   #Ajuda {
     display: grid;
     padding: 16px;
@@ -309,16 +301,12 @@ h3 {
     font-size: 1.1rem;
     font-weight: bolder;
   }
-}
 
-#links {
   img {
     margin: 1rem;
     max-width: 2.7rem;
   }
-}
 
-#links {
   h2 {
     padding: 1rem;
     text-align: center;
@@ -328,17 +316,18 @@ h3 {
 
 footer {
   a {
-    margin-right: 1.5rem;
+    margin-right: 1rem;
     align-items: center;
     align-self: center;
     text-decoration: none;
     color: $fontDefaultColor;
-    font-size: 1.1rem;
     font-weight: bolder;
-  }
-}
 
-footer {
+    img {
+      max-height: 3rem;
+    }
+  }
+
   p {
     margin-left: 1.5rem;
     color: $fontSecondaryColor;
